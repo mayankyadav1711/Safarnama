@@ -64,7 +64,7 @@ router.post("/createpost",requireLogin,  (req, res) => {
     !traveltype ||
     !accomodationpref ||
     !budget ||
-    !needhelp ||
+    !needhelp
     
   ) {
     return res.status(422).json({ error: "Please add all the fields" });
